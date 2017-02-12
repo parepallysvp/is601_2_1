@@ -6,7 +6,7 @@ $Discount_Percent= $_POST['discount_percent'];
 $discount= $List_Price * $Discount_Percent * .01 ;
 $discount_price= $List_Price - $discount ;
 
-$list_price_formatted= "$".number_format($List_Price);
+$list_price_formatted= "$".$List_Price;
 $list_percent_formatted= $Discount_Percent."%";
 $discount_formatted= "$".$discount;
 $discount_price_formatted= "$".$discount_price; 
@@ -22,13 +22,13 @@ $discount_price_formatted= "$".$discount_price;
         <h1>This page is under construction</h1>
 
         <label>Product Description:</label>
-        <span><?php echo $Product_Description; ?></span><br>
+        <span><b><?php echo $Product_Description; ?></b></span><br>
 
         <label>List Price:</label>
-        <span><?php echo $list_price_formatted; ?></span><br>
+        <span><i><?php echo $list_price_formatted; ?></i></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo $list_percent_formatted; ?></span><br>
+        <span><i><?php echo $list_percent_formatted; ?></i></span><br>
 
         <label>Discount Amount:</label>
         <span><?php echo $discount_formatted; ?></span><br>
