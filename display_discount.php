@@ -19,7 +19,7 @@ $discount_price_formatted= "$".$discount_price;
 </head>
 <body>
     <main>
-        <h1>This page is under construction</h1>
+        <h1>Product Discount Calculator</h1>
 
         <label>Product Description:</label>
         <span><b><?php echo $Product_Description; ?></b></span><br>
